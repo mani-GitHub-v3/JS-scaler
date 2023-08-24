@@ -1,0 +1,8 @@
+//one liner function
+
+const test1 = (a) => a*2
+console.log(test1(5))
+
+//wrong, no return
+const test1 = (a) => (return a*2)
+console.log(test1(5))

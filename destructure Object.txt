@@ -1,0 +1,15 @@
+let Manish = {
+    name : 'Manish',
+    age : 22, 
+    address : {
+        city : 'Brooklyn',
+        zipCode : 11210,
+        state : 'New York'
+    }
+}
+
+let {name: n, age: a, address: {city: c}} = Manish
+
+console.log(n)
+console.log(a)
+console.log(c)

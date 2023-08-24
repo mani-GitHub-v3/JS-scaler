@@ -1,0 +1,14 @@
+// for same input you always get same output
+let a = 10
+
+function add(b){
+    console.log(a+2)
+    a++
+}
+
+add(2)
+add(2)
+add(2)
+
+
+

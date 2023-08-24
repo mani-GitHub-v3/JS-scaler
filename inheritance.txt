@@ -1,0 +1,27 @@
+class person {
+    constructor(_name, _age_, __gender){
+        this.name = _name,
+        this.age = _age_,
+        this.gender = __gender
+    }
+    welcome(){
+        console.log(`welcome ${this.name}`)
+    }
+}
+
+class teacher extends person {
+    constructor(_name, _age_, __gender, school){
+        super(_name, _age_, __gender)
+        this.school = school
+    }
+    hello(){
+        super.welcome()
+    }
+}
+
+let p1 = new person("mani", 22, 'M');
+p1.welcome();
+console.log(p1)
+let t1 = new teacher("Rao", 50, 'M', "RV")
+console.log(t1)
+t1.welcome()

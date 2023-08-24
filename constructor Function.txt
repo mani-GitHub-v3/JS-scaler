@@ -1,0 +1,14 @@
+function createCar(_name_, brand, _color__){
+    this.name = _name_,
+    this.brand = brand,
+    this.color = _color__ 
+    
+    this.drive = function(){
+        console.log(`I am driving ${this.name}, ${this.brand}, ${this.color}`)
+    }
+}
+
+let car1 = new createCar('Dzire', 'Maruti Suzuki', 'White');
+
+// console.log(car1.color)
+car1.drive()

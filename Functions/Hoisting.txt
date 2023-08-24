@@ -1,0 +1,15 @@
+
+console.log(a)
+// console.log(b)
+greet()
+add()
+var a = 5
+let b = 6
+
+function greet() {
+    console.log("hello")
+}
+
+let add = function() {
+    console.log('adding')
+}

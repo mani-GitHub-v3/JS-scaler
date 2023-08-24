@@ -1,0 +1,29 @@
+let myObj = {
+    name : 'Manish',
+    company : 'Google',
+    address : {
+        country: 'England',
+        city: 'London'
+    }
+}
+
+// let {a, b, c} = myObj
+
+// console.log(a)
+// console.log(b)
+// console.log(c)
+
+let {name:a, company:b, address:{country:c}} = myObj
+
+// console.log(name)
+// console.log(company)
+// // console.log(address)
+// console.log(country)
+
+console.log(a)
+console.log(b)
+console.log(c)
+
+
+
+

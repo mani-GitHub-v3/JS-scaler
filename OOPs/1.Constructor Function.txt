@@ -1,0 +1,13 @@
+function createCar(_name, _company, _color){
+    this.name = _name
+    this.company = _company
+    this.color = _color
+    
+    this.drive = () =>{
+        console.log(`I am driving ${this.name}`)
+    }
+}
+
+let car1 = new createCar("Thar", "Mahindra", "black")
+car1.drive()
+console.log(car1)

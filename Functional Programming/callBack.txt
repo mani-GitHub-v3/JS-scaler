@@ -1,0 +1,12 @@
+
+function PrintFirstName(fName, cb){
+    console.log(fName)
+    cb("Raja")
+}
+
+function PrintLastName(Lname){
+    console.log(Lname)
+}
+
+PrintFirstName("Manish", PrintLastName)
+PrintLastName("Raj")

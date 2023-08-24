@@ -1,0 +1,14 @@
+class person{
+    constructor(__name__, ___age_){
+        this.name = __name__
+        this.age = ___age_
+    }
+    
+    welcome(){
+        console.log(`welcome ${this.name}`)
+    }
+}
+
+let p1 = new person("manish", 22)
+console.log(p1)
+p1.welcome()

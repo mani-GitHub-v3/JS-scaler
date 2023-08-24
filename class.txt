@@ -1,0 +1,14 @@
+class student {
+    constructor(_name, __class, __rollNumber__){
+        this.name = _name,
+        this.class = __class,
+        this.roll = __rollNumber__
+    }
+    // dhyaan se
+    play(){
+        console.log(`${this.name} is playing`)
+    }
+}
+
+let s1 = new student("Rao", 0, 001)
+console.log(s1)
