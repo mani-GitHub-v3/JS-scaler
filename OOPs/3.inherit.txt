@@ -1,0 +1,36 @@
+class person {
+    constructor(_name, _age, _gend){
+        this.name = _name
+        this.age = _age
+    }
+    
+    welcome(){
+        console.log(`welcome ${this.name}`)
+    }
+}
+
+class teacher extends person {
+    constructor(_name, _age, _subject){
+        super(_name, _age)
+        this.subject = _subject
+    }
+    
+    test(){
+        super.welcome()
+    }
+}
+
+class student extends teacher {
+    constructor(_name, _age, _class){
+        super(_name, _age)
+        this.cls = _class
+    }
+}
+
+
+let s1 = new student("Mani", 24, "IIM-A")
+let t1 = new teacher("SK", 50, "Phy")
+t1.test()
+console.log(t1)
+console.log(s1)
+
